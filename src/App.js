@@ -25,7 +25,7 @@ function App() {
     
   return (
     <>
-      <TodoCounter todos={t.length}/> 
+      <TodoCounter completed={t.map((todo) => todo.completed).length} total={t.length}/> 
       <TodoItem ft={texting} fa={agregart} cancelar={cancelar} addState={addState}>
       {t.map(todo =>(<Todos key={todo.text} todo={todo.text}/>))}
       </TodoItem>
