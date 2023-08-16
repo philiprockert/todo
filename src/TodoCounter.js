@@ -1,10 +1,10 @@
 import React from "react";
-
-function TodoCounter (){
+import { TodoItem } from "./TodoItem";
+function TodoCounter ({todos}){
     return(
         <>
         <h1>
-            0 todos hechos de 0
+            {todos} todos hechos de {todos}
             
         
         </h1>

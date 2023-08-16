@@ -3,9 +3,9 @@ import React from "react";
 
 function Todos ({todo}){
     return(
-        <h1>
+        <ul>
             {todo}
-        </h1>
+        </ul>
     )
 }
 export { Todos }
